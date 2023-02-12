@@ -9,21 +9,41 @@ body{
     
 }
 :root {
-    --brand-color:#212121;
-    
+    --text-color:#212121;
+    --highlight-color: #2196f3;
+    --background-color-header-and-main: #fff;
+    --background-color-footer-and-about-us-section: #2f303a;
+    --font-size-general: 14px;
+    --font-size-medium: 16px;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-700: 700;
+    --font-weight-900: 900;
+    --letter-spacing-03em: 0.03em;
+    --letter-spacing-02em: 0.02em;
+    --line-height-14: 1.14;
+    --our-team-job-and-paragraph-title-details: #757575;
+
 }
 
 
 /* Header */
 
+
+
+
+
+.header-section {
+    background-color: var(--background-color-header-and-main);
+}
 .header-logo {
 
     color:#000000;
     font-family: 'Raleway';
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--letter-spacing-03em);
     text-decoration:none;
 }
 
@@ -32,28 +52,33 @@ body{
     color:#2196F3;
 }
 
+.nav-item .link:hover,
+.nav-item .link:focus {
+    color:#2196F3;
+}
 .nav-list{
     color: #fff;   
 }
 .nav-item li a {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: var(--brand-color);
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-general);
+    letter-spacing:var(--letter-spacing-02em);
+    color: var(--text-color);
     text-decoration: none;
-    line-height: 1.14;
+    line-height: var(--line-height-14);
+    
 } 
 
 .contacts .link:hover,
 .contacts .link:focus {
-    color:blue;
+    color:#2196F3;
 }
 
 .contacts li a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-general);
+    line-height: var(--line-height-14);
+    letter-spacing: var(--letter-spacing-02em);
     color: #757575;
     text-decoration: none;
 }
@@ -64,12 +89,16 @@ body{
 
 /* Main */
 
+.main-section {
+    background-color: var(--background-color-header-and-main);
+}
+
 .about-us-section {
-    background-color: #2f303a;
+    background-color: var(--background-color-footer-and-about-us-section);
 }
 
 .title-btn { 
-    font-weight: 900;
+    font-weight: var(--font-weight-900);
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -80,66 +109,67 @@ body{
 
 .btn:hover,
 .btn:focus {
-    background-color:blue;
+    background-color:#2196F3;
 }
 
 .btn {
-    background-color: #2196F3;
+    background: #2196F3;
     color:#FFFFFF;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-medium);
     line-height: 1.87;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     border:none;
+    
 }
 
 .title-details {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: var(--font-weight-700);
+    font-size:var(--font-size-general);
+    line-height:var(--line-height-14);
+    letter-spacing: var(--letter-spacing-03em);
     text-transform: uppercase;
-    color: var(--brand-color);
+    color: var(--text-color);
 }
 
 .paragraph-title-details {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: var(--font-weight-general);
+    font-size:var(--font-size-general);
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
+    letter-spacing: var(--letter-spacing-03em);
+    color: var(--our-team-job-and-paragraph-title-details);
 }
 
 
 
 .our-team-name {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-medium);
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--brand-color);
+    letter-spacing: var(--letter-spacing-03em);
+    color: var(--text-color);
 }
 
 .our-team-job {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight:var(--font-weight-400);
+    font-size: var(--font-size-medium);
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
+    letter-spacing: var(--letter-spacing-03em);
+    color: var(--our-team-job-and-paragraph-title-details);
 }
 
 .title-our-team {
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--brand-color) ;
+    letter-spacing: var(--letter-spacing-03em);
+    color: var(--text-color) ;
 }
 
 .our-team {
@@ -149,7 +179,7 @@ body{
 /* Footer */
 
 .footer {
-    background-color:#2F303A;
+    background-color: var(--background-color-footer-and-about-us-section);
 }
 
 .footer-logo {
@@ -157,10 +187,10 @@ body{
     color:#2196F3;
     text-decoration: none;
     font-family: 'Raleway';
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em
+    letter-spacing: var(--letter-spacing-03em);
 }
 
 .footer-logo::after {
@@ -174,31 +204,35 @@ body{
 }
 
 
+
 .address-city {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-general);
+    line-height: var(--line-height-14);
+    letter-spacing: var(--letter-spacing-03em);
     color: #FFFFFF;
     text-decoration: none;
+    font-style:normal;
 }
 
 .address-email {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-general);
+    line-height: var(--line-height-14);
+    letter-spacing: var(--letter-spacing-03em);
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    font-style:normal;
 }
 
 .address-phone {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-general);
+    line-height: var(--line-height-14);
+    letter-spacing: var(--letter-spacing-03em);
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    font-style:normal;
 }
 
         /* Portfolio */
@@ -206,19 +240,18 @@ body{
 
 .buttons-list .btns:hover,
 .buttons-list .btns:focus {
-    background: blue;
+    background:#2196F3;
 }
     
 .btns {
     background: #f5f4fa;
     border: none;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-medium);
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--brand-color);
-
+    letter-spacing: var(--letter-spacing-03em);
+    color: var(--text-color);
 }
 
 
