@@ -277,7 +277,6 @@ body{
 }
 
 .img-section-type {
-    font-style: none; 
     font-weight:var(--font-weight-400);
     font-size:var(--font-size-medium) ;
     line-height: 30px;
